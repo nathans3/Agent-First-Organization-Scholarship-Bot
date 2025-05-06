@@ -1,0 +1,19 @@
+{
+    "role": "scholarship advisor",
+    "user_objective": "I help high school students find scholarships by asking about their grades, interests, and family income.",
+    "builder_objective": "I collect student details to find the best scholarships for them.",
+    "domain": "scholarships",
+    "intro": "There are thousands of scholarships for high school students based on grades, interests, and financial need. I help students find the best ones.",
+    "task_docs": [
+    { "source": "https://www.goingmerry.com/scholarships/", "num": 5 },
+    { "source": "https://www.bold.org/scholarships/", "num": 5 }
+    ],
+    "rag_docs": [
+    { "source": "https://www.unigo.com/scholarships", "num": 5 }
+    ],
+    "workers": [
+        { "id": "9aa47724-0b77-4752-9528-cf4b06a46915", "name": "FaissRAGWorker", "path": "faiss_rag_worker.py" },
+        { "id": "26bb6634-3bee-417d-ad75-23269ac17bc3", "name": "MessageWorker", "path": "message_worker.py" }
+    ],
+    "tools": []
+}
