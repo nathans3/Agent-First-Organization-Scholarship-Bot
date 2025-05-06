@@ -1,0 +1,82 @@
+[
+    {
+        "task_name": "Provide scholarships that are merit-based or related to grades",
+        "steps": [
+            "Use the collect_user_information function to gather details from the user, including grades, academic achievements, and any other relevant academic information.",
+            "Utilize retrieve_scholarships_based_on_criteria to find scholarships that match the user's academic performance and any other provided criteria.",
+            "Utilize the filter_and_recommend_scholarships worker to evaluate and narrow down the list of scholarships, offering personalized recommendations to the user.",
+            "Ask the user, via the MessageWorker, if there are any additional criteria or scholarships they are interested in or if they have further questions about the recommendations.",
+            "Provide detailed instructions or additional information on how to apply for the recommended scholarships, using MessageWorker to guide the user through the process."
+        ]
+    },
+    {
+        "task_name": "Provide scholarships that factor in family income and financial need criteria",
+        "steps": [
+            "Collect comprehensive information from the user including grades, interests, family income, location, and demographics to assess eligibility.",
+            "Retrieve scholarships based on the collected user criteria, focusing particularly on family income and financial need.",
+            "Filter and recommend scholarships that match the user's criteria, providing a curated list of options.",
+            "Ask if the user wants more information about any specific scholarships or has additional criteria to consider.",
+            "Provide detailed information about selected scholarships or update recommendations based on any new input from the user."
+        ]
+    },
+    {
+        "task_name": "Provide scholarships tailored to user's interests or chosen academic majors",
+        "steps": [
+            "Collect user information such as grades, interests, academic majors, and family income to determine their eligibility and preferences.",
+            "Utilize the FaissRAGWorker to search the company's internal documentation for relevant scholarships based on the user's collected criteria.",
+            "Filter the scholarships based on the user's specific criteria and eligibility. Recommend the most relevant scholarships to the user.",
+            "Ask the user if they would like more options or if they have additional criteria or questions regarding the scholarships.",
+            "Provide detailed instructions or additional information about applying for the recommended scholarships, if the user is interested."
+        ]
+    },
+    {
+        "task_name": "Provide information about scholarships available based on the user's state or region",
+        "steps": [
+            "Collect user information such as location (state or region), academic performance, interests, and family income to understand eligibility and criteria for scholarship recommendations.",
+            "Utilize the FaissRAGWorker to search the internal documentation for scholarships available specific to the user's state or region and other collected criteria like academic interests and family income.",
+            "Filter and evaluate the scholarships based on the user's location and other provided details to curate a list of the most suitable opportunities.",
+            "Communicate the filtered scholarship opportunities to the user, providing key details such as eligibility requirements, deadlines, and application procedures.",
+            "Ask if the user needs additional information or has other criteria for eligibility checks and recommendations."
+        ]
+    },
+    {
+        "task_name": "Provide demographic-specific scholarships, such as those for minorities or gender-specific opportunities",
+        "steps": [
+            "Collect detailed user information, including grades, interests, family income, location, and demographics, to determine eligibility for specific scholarships.",
+            "Retrieve scholarships based on the user's provided information, focusing on demographic-specific opportunities such as those for minorities or gender-specific scholarships.",
+            "Provide a list of recommended scholarships tailored to the user's criteria and demographic information.",
+            "Ask if the user needs further assistance or has any questions regarding the scholarships presented.",
+            "Offer additional information if requested, such as guidance on the application process or deadlines, and encourage the user to pursue the opportunities."
+        ]
+    },
+    {
+        "task_name": "Provide a list of easy-to-apply or no-essay scholarships",
+        "steps": [
+            "Collect necessary user information, such as grades, interests, and family income, to gather details for eligibility.",
+            "Retrieve scholarships based on user-provided criteria, focusing on those that are easy to apply or have no essay requirements.",
+            "Filter and recommend scholarships, providing a list of suitable options to the user.",
+            "Ask if the user has any more specific preferences or needs further assistance with scholarship applications.",
+            "Provide additional guidance or information on how to apply for the recommended scholarships."
+        ]
+    },
+    {
+        "task_name": "Provide scholarships applicable to the user's current academic year or education level like high school, undergraduate, graduate",
+        "steps": [
+            "Collect user information such as grades, interests, family income, location, and demographic factors using the 'collect_user_information' task.",
+            "Retrieve scholarships that match the collected user criteria using the 'retrieve_scholarships_based_on_criteria' task.",
+            "Filter and narrow down the eligible scholarships based on the user's specific information using the 'filter_and_recommend_scholarships' task.",
+            "Provide a list of recommended scholarships to the user using the 'MessageWorker'.",
+            "Ask if the user has any additional criteria or needs further assistance in finding more scholarships."
+        ]
+    },
+    {
+        "task_name": "Provide scholarships that consider extracurricular involvement or personal achievements",
+        "steps": [
+            "Use MessageWorker to ask the user about their grades, interests, family income, extracurricular involvement, and personal achievements.",
+            "Collect the user's information using collect_user_information, focusing on grades, interests, family income, extracurricular involvement, and personal achievements.",
+            "Utilize filter_and_recommend_scholarships to assess the user's eligibility based on collected information and identify scholarships that match their extracurricular involvement and personal achievements.",
+            "Use MessageWorker to provide the user with a list of recommended scholarships.",
+            "Ask the user if they need further assistance or have more criteria for scholarship recommendations using MessageWorker."
+        ]
+    }
+]
